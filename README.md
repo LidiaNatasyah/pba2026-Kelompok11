@@ -9,7 +9,7 @@
 | Iqfina Haula Halika | 123450076 | @iqfinahalika |
 
 ## Dataset
-Dataset: 
+Dataset: https://www.kaggle.com/datasets/taqiyyaghazi/indonesian-marketplace-product-reviews/data
 
 ## Tugas Klasifikasi
 
