@@ -35,3 +35,8 @@ Berdasarkan tabel di atas, **Light Gradient Boosting Machine (LightGBM)** terpil
 1. **Performa Tertinggi:** Mengungguli algoritma lain dengan Akurasi dan F1-Score mencapai **98.23%**.
 2. **Kecepatan Komputasi:** Sangat efisien, dengan waktu pelatihan tercepat (hanya 4.9 detik), mengalahkan SVM yang memakan waktu hampir 11 detik.
 3. **Kualitas Klasifikasi (AUC):** Memiliki skor *Area Under Curve* (AUC) sebesar 0.9984, menunjukkan kemampuan model yang sangat baik dalam membedakan kelas sentimen positif dan negatif.
+
+
+🔗 **Live Demo Aplikasi**
+Model klasifikasi sentimen ini telah di-deploy menjadi aplikasi web interaktif. Silakan coba langsung aplikasinya di sini:
+[Hugging Face Space - Deteksi Sentimen E-Commerce](https://huggingface.co/spaces/lidianat/deteksi-sentimen-ecommerce)
