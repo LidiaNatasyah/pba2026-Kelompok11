@@ -81,4 +81,4 @@ Pelatihan model dilakukan menggunakan perangkat CPU. Model menunjukkan kemampuan
 | **Positive** | 0.98 | 0.99 | 0.99 | 514 |
 
 ## Tautan Penting
-* **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/analisis-sentimen-ulasan-produk-ecommerce
+* **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/Analisis-sentimen-komentar-ecommerce
