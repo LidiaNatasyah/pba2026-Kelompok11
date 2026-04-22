@@ -51,7 +51,7 @@ Model klasifikasi sentimen ini telah di-deploy menjadi aplikasi web interaktif. 
 
 # Module Deep Learning (DL): E-Commerce Sentiment Analysis
 
-Modul ini berisi implementasi arsitektur **Bidirectional LSTM (BiLSTM)** untuk tugas klasifikasi sentimen ulasan produk e-commerce berbahasa Indonesia. Pengembangan model ini ditujukan untuk memenuhi Checkpoint 3 pada Tugas Besar mata kuliah SD25-32202 Pemrosesan Bahasa Alami, Institut Teknologi Sumatera (ITERA).
+Modul ini berisi implementasi arsitektur **Bidirectional LSTM (BiLSTM)** untuk tugas klasifikasi sentimen ulasan produk e-commerce berbahasa Indonesia.
 
 ## Arsitektur Model
 Model dibangun dari awal (*from scratch*) menggunakan kerangka kerja PyTorch dengan spesifikasi sebagai berikut:
