@@ -53,13 +53,6 @@ Model klasifikasi sentimen ini telah di-deploy menjadi aplikasi web interaktif. 
 
 Modul ini berisi implementasi arsitektur **Bidirectional LSTM (BiLSTM)** untuk tugas klasifikasi sentimen ulasan produk e-commerce berbahasa Indonesia.
 
-## Arsitektur Model
-Model dibangun dari awal (*from scratch*) menggunakan kerangka kerja PyTorch dengan spesifikasi sebagai berikut:
-* **Tipe Model**: Bidirectional LSTM (BiLSTM)
-* **Jumlah Lapisan**: 2 Lapis
-* **Total Parameter**: 2.497.411 (Memenuhi kriteria ToR < 10 Juta parameter)
-* **Ukuran Kosakata (Vocabulary)**: 1.003 kata unik
-
 ## Detail Dataset & Preprocessing
 Data bersumber dari repositori Hugging Face (`AIbnuHibban/e-commerce-sentiment-bahasa-indonesia`).
 * **Total Data Awal**: 21.840 baris
