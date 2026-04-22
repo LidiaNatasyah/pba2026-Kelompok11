@@ -15,9 +15,16 @@ Deskripsi Dataset:
 Dataset yang digunakan adalah "E-commerce Sentiment Bahasa Indonesia" yang berisi ribuan ulasan pelanggan dari berbagai platform belanja daring. Setiap data telah dilabeli secara manual ke dalam kategori sentimen positif, netral, dan negatif. Dataset ini mencakup variasi bahasa konsumen Indonesia (formal dan non-formal), menjadikannya sumber data yang ideal untuk melatih serta menguji akurasi model klasifikasi teks dalam menangkap opini publik terhadap layanan retail digital.
 
 ## Model yang Digunakan
+Machine Learning:
+
 LightGBM
+
 Logistic Regression
+
 SVM - Linear Kernel
+
+Deep Learning: BiLSTM
+
 
 
 ## 📊 Perbandingan Performa Model
