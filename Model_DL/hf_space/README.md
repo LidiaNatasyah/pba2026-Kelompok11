@@ -1,54 +1,33 @@
----
-title: Mental Health Sentiment Analyzer
-emoji: 🧠
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: "4.44.0"
-app_file: app.py
-pinned: false
-license: mit
----
+# 🛒 E-Commerce Sentiment Analyzer
 
-# 🧠 Mental Health Sentiment Analyzer
+Klasifikasi sentimen ulasan produk e-commerce berbahasa Indonesia menggunakan arsitektur **Deep Learning (BiLSTM)**. 
 
-Klasifikasi status kesehatan mental dari teks menggunakan tiga model deep learning.
+Aplikasi/repositori ini menganalisis teks ulasan pelanggan dan memprediksi salah satu dari **3 kelas sentimen**:
+- **Positive** — ulasan yang menunjukkan kepuasan pelanggan.
+- **Neutral** — ulasan yang bersifat umum atau tidak memihak.
+- **Negative** — ulasan yang menunjukkan kekecewaan atau keluhan.
 
-## Deskripsi
+## 🚀 Model & Performa
 
-Aplikasi ini menganalisis teks dan memprediksi salah satu dari **7 status kesehatan mental**:
+Model ini dilatih menggunakan **PyTorch** dengan teknik *word embedding* yang dipelajari langsung dari dataset ulasan e-commerce Indonesia untuk menangkap nuansa bahasa lokal dan singkatan khas belanja *online*.
 
-- **Normal** — kondisi mental sehat
-- **Depression** — depresi
-- **Suicidal** — pikiran bunuh diri
-- **Anxiety** — kecemasan
-- **Stress** — stres
-- **Bipolar** — gangguan bipolar
-- **Personality Disorder** — gangguan kepribadian
-
-## Model yang Tersedia
-
-| Model | Deskripsi |
+| Komponen | Keterangan |
 |-------|-----------|
-| **BiLSTM** | Bidirectional LSTM, embedding train from scratch |
-| **BiLSTM+Attention** | BiLSTM + mekanisme attention dengan visualisasi heatmap |
-| **DistilBERT** | Fine-tuned DistilBERT (akurasi tertinggi) |
+| **Arsitektur** | Bidirectional LSTM (BiLSTM) - 2 Layers |
+| **Framework** | PyTorch |
+| **Total Parameter** | ~2.49 Juta |
+| **Akurasi (Test)** | **98.87%** |
+| **F1-Score** | **0.9887** |
 
-## Cara Menggunakan
+## 📂 Dataset
 
-1. Pilih model dari dropdown
-2. Masukkan teks (dalam bahasa Inggris)
-3. Klik **Analisis**
-4. Lihat prediksi kelas dan confidence tiap kelas
-5. Untuk BiLSTM+Attention, lihat attention heatmap untuk interpretasi
+Dataset yang digunakan adalah [E-Commerce Sentiment Bahasa Indonesia](https://huggingface.co/datasets/AIbnuHibban/e-commerce-sentiment-bahasa-indonesia) yang berisi ribuan ulasan pelanggan dari berbagai platform e-commerce.
 
-## Dataset
+## 🛠️ Instalasi & Prasyarat
 
-[Sentiment Analysis for Mental Health](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health) — 7 kelas status kesehatan mental dari berbagai platform media sosial.
+Pastikan Anda memiliki Python 3.8+ terinstal di sistem Anda.
 
-## Disclaimer
-
-> ⚠️ Ini adalah alat demonstrasi akademis untuk Workshop Pemrosesan Bahasa Alami (PBA) di Institut Teknologi Sumatera (ITERA). **Bukan alat diagnosis medis.** Jika Anda atau orang di sekitar Anda membutuhkan bantuan kesehatan mental, hubungi profesional kesehatan mental atau layanan krisis kesehatan mental di negara Anda.
-
----
-_Workshop PBA — Institut Teknologi Sumatera (ITERA), 2026_
+1. **Clone repositori ini:**
+   ```bash
+   git clone [https://github.com/username-anda/nama-repo-anda.git](https://github.com/username-anda/nama-repo-anda.git)
+   cd nama-repo-anda
