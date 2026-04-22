@@ -47,3 +47,44 @@ Berdasarkan tabel di atas, **Light Gradient Boosting Machine (LightGBM)** terpil
 🔗 **Live Demo Aplikasi**
 Model klasifikasi sentimen ini telah di-deploy menjadi aplikasi web interaktif. Silakan coba langsung aplikasinya di sini:
 [Hugging Face Space - Deteksi Sentimen E-Commerce](https://huggingface.co/spaces/lidianat/deteksi-sentimen-ecommerce)
+
+# Module Deep Learning (DL): E-Commerce Sentiment Analysis
+
+Modul ini berisi implementasi arsitektur **Bidirectional LSTM (BiLSTM)** untuk tugas klasifikasi sentimen ulasan produk e-commerce berbahasa Indonesia. Pengembangan model ini ditujukan untuk memenuhi Checkpoint 3 pada Tugas Besar mata kuliah SD25-32202 Pemrosesan Bahasa Alami, Institut Teknologi Sumatera (ITERA).
+
+## Arsitektur Model
+Model dibangun dari awal (*from scratch*) menggunakan kerangka kerja PyTorch dengan spesifikasi sebagai berikut:
+* **Tipe Model**: Bidirectional LSTM (BiLSTM)
+* **Jumlah Lapisan**: 2 Lapis
+* **Total Parameter**: 2.497.411 (Memenuhi kriteria ToR < 10 Juta parameter)
+* **Ukuran Kosakata (Vocabulary)**: 1.003 kata unik
+
+## Detail Dataset & Preprocessing
+Data bersumber dari repositori Hugging Face (`AIbnuHibban/e-commerce-sentiment-bahasa-indonesia`).
+* **Total Data Awal**: 21.840 baris
+* **Data yang Digunakan (Sampel)**: 15.000 baris
+* **Proporsi Pemisahan Data**:
+  * Data Latih (Train): 12.000
+  * Data Validasi (Val): 1.500
+  * Data Uji (Test): 1.500
+* **Pembersihan Teks (Preprocessing)**: Meliputi *lowercasing*, penghapusan tautan (URL/HTML), pembersihan karakter non-alfanumerik, serta normalisasi singkatan/bahasa gaul (*slang*) yang umum digunakan pada platform e-commerce.
+
+## Hasil Pelatihan & Evaluasi
+Pelatihan model dilakukan menggunakan perangkat CPU. Model menunjukkan kemampuan konvergensi yang sangat baik dan proses pelatihan dihentikan lebih awal (*early stopping*) pada Epoch ke-6 untuk mencegah *overfitting*.
+
+* **Durasi Pelatihan**: ~3.7 menit
+* **Best Validation Loss**: 0.0353
+* **Akurasi (Test Set)**: 98.87%
+* **F1 Macro**: 98.87%
+* **F1 Weighted**: 98.87%
+
+**Classification Report:**
+
+| Kelas | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **Negative** | 0.99 | 0.99 | 0.99 | 513 |
+| **Neutral** | 0.99 | 0.99 | 0.99 | 473 |
+| **Positive** | 0.98 | 0.99 | 0.99 | 514 |
+
+## Tautan Penting
+* **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/analisis-sentimen-ulasan-produk-ecommerce
