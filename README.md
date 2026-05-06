@@ -8,6 +8,10 @@
 | Vania Claresta | 123450029 | @vaniaclrstaa |
 | Iqfina Haula Halika | 123450076 | @iqfinahalika |
 
+## 📚 Publikasi
+**Benchmarking LightGBM and BiLSTM for Sentiment Analysis on Indonesian E-Commerce Reviews**  
+🔗 **[Tautan arXiv](https://arxiv.org/abs/2605.01322)**
+
 ## Dataset
 Dataset: https://huggingface.co/datasets/AIbnuHibban/e-commerce-sentiment-bahasa-indonesia
 
@@ -83,6 +87,4 @@ Pelatihan model dilakukan menggunakan perangkat CPU. Model menunjukkan kemampuan
 ## Tautan Penting
 * **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/Analisis-sentimen-komentar-ecommerce
 
-## 📚 Publikasi
-**Benchmarking LightGBM and BiLSTM for Sentiment Analysis on Indonesian E-Commerce Reviews**  
-🔗 **[Tautan arXiv](https://arxiv.org/abs/2605.01322)**
+
