@@ -82,3 +82,7 @@ Pelatihan model dilakukan menggunakan perangkat CPU. Model menunjukkan kemampuan
 
 ## Tautan Penting
 * **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/Analisis-sentimen-komentar-ecommerce
+
+## 📚 Publikasi
+**Benchmarking LightGBM and BiLSTM for Sentiment Analysis on Indonesian E-Commerce Reviews**  
+🔗 **[Tautan arXiv](https://arxiv.org/abs/2605.01322)**
