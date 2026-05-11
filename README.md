@@ -87,7 +87,3 @@ Pelatihan model dilakukan menggunakan perangkat CPU. Model menunjukkan kemampuan
 ## Tautan Penting
 * **Hugging Face Spaces (Demo Interaktif)**: https://huggingface.co/spaces/lidianat/Analisis-sentimen-komentar-ecommerce
  
-
-**Link Paper Arxiv**
-https://arxiv.org/abs/2605.01322
-
